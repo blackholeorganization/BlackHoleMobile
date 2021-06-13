@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest package="capacitor.android.plugins"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:amazon="http://schemas.amazon.com/apk/res/android">
+<application  >
+<provider android:name="com.darryncampbell.cordova.plugin.intent.CordovaPluginIntentFileProvider" android:authorities="${applicationId}.darryncampbell.cordova.plugin.intent.fileprovider" android:exported="false" android:grantUriPermissions="true">
+  <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+</provider>
+  <service android:name="de.appplant.cordova.plugin.background.UploadForegroundService"/>
+  <service android:name="de.appplant.cordova.plugin.background.DownloadForegroundService"/>
+
+<provider android:name="io.github.pwlin.cordova.plugins.fileopener2.FileProvider" android:authorities="${applicationId}.fileOpener2.provider" android:exported="false" android:grantUriPermissions="true">
+  <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/opener_paths"/>
+</provider>
+<provider android:name="de.appplant.cordova.plugin.notification.util.AssetProvider" android:authorities="${applicationId}.provider" android:exported="false" android:grantUriPermissions="true">
+  <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/localnotification_provider_paths"/>
+</provider>
+<receiver android:name="de.appplant.cordova.plugin.localnotification.TriggerReceiver" android:exported="false"/>
+<receiver android:name="de.appplant.cordova.plugin.localnotification.ClearReceiver" android:exported="false"/>
+  <receiver android:name="de.appplant.cordova.plugin.localnotification.ClickReceiver" android:exported="false"/>
+  <!--<activity android:name="de.appplant.cordova.plugin.localnotification.ClickReceiver" android:launchMode="singleInstance" android:theme="@android:style/Theme.Translucent" android:exported="false"/>-->
+</application>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+<uses-permission android:name="android.permission.WAKE_LOCK"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

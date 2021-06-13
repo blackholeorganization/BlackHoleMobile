@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">BlackHole</string>
+    <string name="package_name">run.blackhole.app</string>
+    <!--Permission Require Dialog-->
+    <string name="dialog_permission_require_title">Permission required</string>
+    <string name="dialog_permission_require_description">To upload or download, allow BlackHole to access your files.</string>
+    <string name="dialog_permission_require_positive_button">CONTINUE</string>
+    <string name="dialog_permission_require_negative_button">DISMISS</string>
+    <!--DownloadNotification-->
+    <string name="notification_download_pause">Download paused</string>
+    <string name="notification_download_complete">Download completed</string>
+    <string name="notification_download_password_require_title">File password required</string>
+    <string name="notification_download_password_require_description">Enter file password to start download.</string>
+    <string name="notification_download_saving_file">Saving…</string>
+    <!--UploadNotification-->
+    <string name="notification_upload_complete">Upload completed</string>
+</resources>

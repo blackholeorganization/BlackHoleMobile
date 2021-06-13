@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <access origin="*" />
+  
+  <feature name="IntentShim">
+    <param name="android-package" value="com.darryncampbell.cordova.plugin.intent.IntentShim"/>
+    <param name="onload" value="true"/>
+  </feature>
+
+  <feature name="Permissions">
+    <param name="android-package" value="com.android.plugins.Permissions"/>
+  </feature>
+
+  <feature name="BackgroundMode">
+    <param name="android-package" value="de.appplant.cordova.plugin.background.BackgroundMode"/>
+  </feature>
+  <feature name="BackgroundModeExt">
+    <param name="android-package" value="de.appplant.cordova.plugin.background.BackgroundModeExt"/>
+  </feature>
+
+  <feature name="Badge">
+    <param name="android-package" value="de.appplant.cordova.plugin.badge.Badge"/>
+  </feature>
+
+  <feature name="Device">
+    <param name="android-package" value="org.apache.cordova.device.Device"/>
+  </feature>
+
+  <feature name="Notification">
+    <param name="android-package" value="org.apache.cordova.dialogs.Notification"/>
+  </feature>
+
+  <feature name="File">
+    <param name="android-package" value="org.apache.cordova.file.FileUtils"/>
+    <param name="onload" value="true"/>
+  </feature>
+
+  <feature name="FileOpener2">
+    <param name="android-package" value="io.github.pwlin.cordova.plugins.fileopener2.FileOpener2"/>
+  </feature>
+
+  <feature name="FilePath">
+    <param name="android-package" value="com.hiddentao.cordova.filepath.FilePath"/>
+    <param name="onload" value="true"/>
+  </feature>
+
+  <feature name="LocalNotification">
+    <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification"/>
+  </feature>
+
+  
+</widget>
